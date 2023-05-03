@@ -76,6 +76,14 @@ body {
   color: #444;
   padding: 20px 0;
 }
+.Boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: chocolate;
+  color: #444;
+  padding: 20px 0;
+}
 
 .wrapper:first-child {
   margin-right: 20px;
