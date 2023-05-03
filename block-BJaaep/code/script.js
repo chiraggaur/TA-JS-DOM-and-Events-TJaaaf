@@ -1,36 +1,29 @@
-// without event delegation 
- let ul = document.querySelector('.boxes');
-for (let i = 1; i <= 12; i++){
-    let li = document.createElement('li');
-    let h2 = document.createElement('h2');
-     li.classList.add('box');
-    //  console.log(li);
-    li.append(h2);
-     ul.append(li);
-     li.addEventListener('click',function(){
-        // let timeTaken = Math.floor(event.timeStamp);
-        // console.log(timeTaken);
-         h2.innerText = i;
-     })
-}
+//without delegation
 
+let li = document.querySelectorAll('.first li');
+let secondBox = document.querySelector('.second');
 
-//with delegation
+li.forEach((elm,index) => {
+  elm.addEventListener('click',function(event){
+     event.target.innerHTML = index + 1
+    setTimeout(() => {
+      event.target.innerHTML = "";
 
-let rl = document.querySelector('.Boxes');
-
-
-for (let i = 1; i <= 12; i++){
-    let li = document.createElement('li');
-      li.setAttribute("data-value",i);
-    let h2 = document.createElement('h2');
-     li.classList.add('box');
-    li.append(h2);
-     rl.append(li); 
-     li.addEventListener('click',handleEvent);
-     function handleEvent(event){
-        let Number = event.target.dataset.value;
-        h2.innerHTML = Number;
-    }
-     }  
+    },5000);
+     
+  });
+});
   
+
+// With delegation 
+
+secondBox.addEventListener("click",(event) => {
+    let text = event.target.dataset.text;
+    event.target.innerHTML = text;
+    setTimeout(() => {
+      event.target.innerHTML = "";
+
+    },5000);
+})
+
+
