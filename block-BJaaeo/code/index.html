@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outerBox">
+      <h1>🤯 Calculator 🤩</h1>
+      <div class="wrapper">
+        <div class="textArea">
+          <input type="text" class="textField" multiple maxlength="20">
+        </div>
+       
+
+        <div class="symbols">
+         <button class="addition symbol_1" data-text = "+"> + </button>
+         <button class="subtraction symbol_1" data-text = "-"> - </button>
+         <button class="multiplication symbol_1" data-text = "*"> * </button>
+         <button class="remainder symbol_1" data-text = "%"> % </button>
+        </div>
+
+        <div class="numbers">
+          <div class="left">
+            <div>
+              <button class="numeric" data-text = 7> 7 </button>
+              <button class="numeric" data-text = 8> 8 </button>
+              <button class="numeric" data-text = 9> 9 </button>
+            </div>
+            <div> 
+              <button class="numeric" data-text = 4> 4 </button>
+              <button class="numeric" data-text = 5> 5 </button>
+              <button class="numeric" data-text = 6> 6 </button> 
+            </div>
+  
+  
+          <div> 
+            <button class="numeric" data-text = 1> 1 </button>
+            <button class="numeric" data-text = 2> 2 </button>
+            <button class="numeric" data-text = 3> 3 </button>
+          </div>
+            <div>
+              <button class="numeric" data-text = .> . </button>
+              <button class="numeric" data-text = 0> 0 </button>
+              <button class="numeric clear" data-text = c> c </button>
+            </div>
+          </div>
+          <div class="right">
+              <button class="equalButton" data-text = "="> = </button>
+          </div>
+
+
+
+ 
+         </div>
+
+        
+      </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
