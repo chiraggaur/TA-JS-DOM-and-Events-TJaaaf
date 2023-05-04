@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Rock Paper and Scissors</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1> Rock Paper and Scissors </h1>
+      </div>
+     
+           <div class="countwrapper">
+            <h2 class="count" > You </h2>
+            <section class="space"> - </section>
+            <section class="wins">  0 </section>
+           </div>
+           <!-- Rock -->
+            <i class="fa fa-hand-rock-o" aria-hidden="true" style="color: rgb(44, 115, 143); font-size: 20px;" data-text="Rock" > Rock</i>
+
+          <!-- Paper -->
+          <i class="fa fa-hand-paper-o" aria-hidden="true" style="color: rgb(44, 115, 143); font-size: 20px;" data-text="Paper"> Paper</i>
+
+         <!-- Scissors -->
+         <i class="fa fa-hand-scissors-o" aria-hidden="true" style="color: rgb(44, 115, 143); font-size: 20px;" data-text="Scissors"> Scissors</i>
+
+         <!-- computer -->
+              
+         <div class="countwrapper">
+          <h2 class="count"> Machine </h2> 
+          <section class="space"> - </section>
+          <section class="wins">  0 </section>
+         </div>
+         <!-- Rock -->
+          <i class="fa fa-hand-rock-o" aria-hidden="true" style="color: red; font-size: 20px;" data-auto="Rock"  > Rock</i>
+
+        <!-- Paper -->
+        <i class="fa fa-hand-paper-o" aria-hidden="true" style="color: red; font-size: 20px;" data-auto="Paper"> Paper</i>
+
+       <!-- Scissors -->
+       <i class="fa fa-hand-scissors-o" aria-hidden="true" style="color: red; font-size: 20px;" data-auto="Scissors"> Scissors</i>
+       <h3 class="result"></h3>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
