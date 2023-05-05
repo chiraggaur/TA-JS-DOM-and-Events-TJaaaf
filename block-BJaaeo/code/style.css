@@ -1,0 +1,100 @@
+h1{
+    text-align: center;
+}
+.outerBox{
+    width: 800px;
+    height: 700px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    background-color: rgb(197, 220, 228);
+}
+.wrapper{
+    width: 600px;
+    height: 500px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.symbols{
+    width: 500px;
+    height: 70px;
+    /* border: 2px solid black; */
+}
+.textArea{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+}
+.textField{
+    width: 440px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: end;
+    border: 2px solid black;
+    position: relative;
+    left: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+.symbol_1{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgb(135, 66, 66);
+    margin-left: 10px;
+}
+.numeric{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(216, 212, 212);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.numbers{
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: start;
+    margin-left: 2px;
+    /* border: 2px solid black; */
+}
+.left{
+   width: 350px;
+   height: 300px;
+   /* border: 2px solid black; */
+}
+.right{
+    width: 100px;
+    height: 300px;
+    /* border: 2px solid black; */
+}
+.equals{
+    width: 100px;
+    height: 300px;
+    /* padding-top: 20px; */
+    /* margin-top: 10px; */
+     /* border: 2px solid black; */
+}
+.equalButton{
+    width: 100px;
+    height: 230px;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-top: 10px;
+    background-color: darkcyan;
+}
+.clear{
+    background-color: rgb(47, 8, 8);
+    color: grey;
+    font-size: 30px;
+}
