@@ -1,0 +1,112 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper{
+  width: 450px;
+  height: 800px;
+  margin: 80px auto;
+  box-shadow: 0 0 2px 0;
+  border: 2px solid lightgray;
+}
+.header{
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(186, 182, 182);
+  /* border: 2px solid black; */
+}
+.create{
+  font-size: 40px;
+  /* border: 2px solid black; */
+  margin-left:30px ;
+}
+.form_area{
+  width: 320px;
+  height: 650px;
+  color: rgb(120, 117, 117);
+  margin-left: 60px;
+   margin-top: 20px;
+  font-size: 20px;
+  /* border: 2px solid black; */
+}
+.text_field{
+  width: 300px;
+  height: 40px;
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  border-radius: 3px;
+  border: 1px solid black;
+}
+input::placeholder{
+ font-size: 15px;
+}
+.submit{
+  width: 300px;
+  font-size: 20px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(222, 84, 34);
+  /* margin-left: 10px; */
+  height: 40px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+small{
+  color: red;
+}
+/* .input:valid{
+  border: 2px solid green;
+}
+.input:invalid{
+  border: 2px dotted red;
+}
+.input:required{
+  border: 2px dotted red;
+} */
+
+.error{
+  border: 2px solid red;
+}
+.success{
+  border: 2px solid green;
+}
