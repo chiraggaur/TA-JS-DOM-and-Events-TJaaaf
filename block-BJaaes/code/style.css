@@ -94,7 +94,7 @@ input::-webkit-inner-spin-button {
 small{
   color: red;
 }
-.input:valid{
+/* .input:valid{
   border: 2px solid green;
 }
 .input:invalid{
@@ -102,4 +102,11 @@ small{
 }
 .input:required{
   border: 2px dotted red;
+} */
+
+.error{
+  border: 2px solid red;
+}
+.success{
+  border: 2px solid green;
 }

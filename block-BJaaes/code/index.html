@@ -12,39 +12,37 @@
         <h1 class="create"> Create Account </h1>
       </div>
       <form class="form_area">
-        <label>Username</label>
-        <br>
-        <input class = "text_field" type="text" name="username" placeholder="Arya">
-        <small class="alert"> </small>
-        <br>
-        <label>Name</label>
-        <br>
-        <input class = "text_field" type="text" name="name" placeholder="example" minlength="6">
-        <small class="alertname"> </small>
-        <br>
-        <label>Email</label>
-        <br>
-        <input class = "text_field" type="text" name="email" placeholder="example@xyz.com" minlength="6">
-        <small class="alert_email"> </small>
-        <br>
-        <label>Password</label>
-        <br>
-        <input class = "text_field" type="password" name="password" placeholder="******">
-        <br>
-        <label>Confirm Password</label>
-      
-        <br>
-        <br>
-        <input class = "text_field" type="password" name="confirm_password" placeholder="******">
-        <small class="confirm_alert"> </small>
-        <br>
-        <label>Phone Number</label>
-        <br>
-        <br>
-        <input class = "text_field" type="number" name="phone_number" placeholder="+91"  style="font-size: 20px;">
-        <small class="Phonealert"> </small>
-        <br>
-         <br>
+        <div class="form_control">
+          <label>Username</label>
+          <input class = "text_field" type="text" name="username" placeholder="Arya">
+          <small class="alert"> </small>
+        </div>
+         <div class="form_control">
+          <label>Name</label>
+          <input class = "text_field" type="text" name="name" placeholder="example" >
+          <small class="alertname"> </small>
+         </div>
+        <div class="form_control">
+          <label>Email</label>
+          <input class = "text_field" type="text" name="email" placeholder="example@xyz.com" minlength="6">
+          <small class="alert_email"> </small>
+        </div>
+        <div class="form_control">
+          <label>Password</label>
+          <input class = "text_field" type="password" name="password" placeholder="******">
+          <small></small>
+         
+        </div>
+        <div class="form_control">
+          <label>Confirm Password</label>
+          <input class = "text_field" type="password" name="confirm_password" placeholder="******">
+          <small class="confirm_alert"> </small>
+        </div>
+        <div>
+          <label>Phone Number</label>
+          <input class = "text_field" type="number" name="phone_number" placeholder="+91"  style="font-size: 20px;">
+          <small class="Phonealert"> </small>
+        </div>
          <button class="submit"> Submit </button>
       </form>
     </div>
