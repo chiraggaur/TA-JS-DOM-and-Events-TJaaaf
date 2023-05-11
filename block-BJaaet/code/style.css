@@ -33,7 +33,9 @@ html {
     height: 500px;
     margin: 50px auto;
     border-radius: 5px;
-   border: 2px solid black;
+    background-color: rgb(90, 186, 206);
+   box-shadow: 10px 10px 5px #9b9797;
+   /* border: 2px solid black; */
 }
 .header{
     width: 500px;
@@ -44,20 +46,41 @@ html {
     /* border: 2px solid green; */
     background-color: rgb(162, 158, 158);
 }
-.movie_label{
-    font-size: 30px;
-    margin-top: 20px;
-    margin-left: 20px;
-    /* border: 2px solid black; */
-    display: inline-block;
-}
-.movie_names{
-    width: 400px;
-    height: 40px;
+
+.movies_name{
+    width: 460px;
+    height: 50px;
+    margin: 20px 20px;
+    font-size: 20px;
+    border-radius: 5px ;
     border: 2px solid black;
-    border-radius: 5px;
-    margin-left: 20px;
 }
-.movies_list{
-    
+.list{
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: aliceblue;
+  height:50px ;
+}
+.type_names{
+  background-color: aliceblue;
+}
+.type_names{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  border: none;
+  margin-top: 10px;
+}
+h2{
+  width: 300px;
+  /* border: 2px solid black; */
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.type_names:checked{
+  background-color: aqua;
 }
