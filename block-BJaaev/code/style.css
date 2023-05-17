@@ -5,8 +5,9 @@ body{
 }
 
 .header_wrapper{
-    width: 100vw;
+    width: 300px;
     height: 100px;
+    margin-left: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,12 +43,7 @@ body{
 
     /* border-style: outset; doubt with border shadow  */
 }
-.content_todo_list{
-    /* display: inline-block; */
-    margin: 5px 100px;
-    border-radius: 10px;
-    /* border: 2px solid black; */
-}
+
 .completed{
     display: inline-block;
     margin-left: 20px;
@@ -66,4 +62,63 @@ body{
 }
 li{
     border-bottom: 2px dotted gray;
+}
+.filters{
+    list-style-type: none;
+}
+.filter_buttons{
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+}
+.All{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius:5px ;
+    font-size: 15px;
+}
+.Completed{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius:5px ;
+    font-size: 15px;
+}
+.Active{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius:5px ;
+    font-size: 15px;
+}
+.Clear{
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius:5px ;
+    font-size: 15px;
+}
+footer{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    background-color: pink;
+    margin-left: 120px;
+    justify-content: space-around;
+}
+.selected{
+   background-color: white;
+   color: black;
+   border: 2px solid black;
 }
