@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+  border: 2px solid black;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;  
+  background-color: blueviolet;
+  /* background-color: blueviolet; gradiant use needed */
+}
+.searchPeoples{
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius:5px ;
+  font-size: 20px;
+  border: 2px solid black;
+}
+.portions{
+  width: 1400px;
+  /* height: 100vh; */
+  margin-top: 20px;
+  margin-left: 20px;
+   border-radius:5px ;
+   display: flex;
+   flex-wrap: wrap;
+  /* border: 2px solid black; */
+}
+.rootElm{
+  width: 400px;
+  height: 250px;
+  background-color: lightcyan;
+  border-radius: 5px;
+  margin-left: 50px;
+  list-style: none;
+  /* border: 2px solid black; */
+}
+
+ /* UI styling */
+
+ .profile_Image{
+  border-radius: 50%;
+   position: relative;
+   top: 10px;
+   left: 120px;
+  /* border: 2px solid black; */
+ }
+ .name{
+  /* border:  2px solid black; */
+  width:max-content;
+  /* display:  inline-block; */
+ }
+
+.about{
+  /* border:  2px solid black; */
+  position: relative;
+  right: 35px;
+} 
+.know_More{
+  border:  2px solid black;
+  width: 150px;
+  height: 30px;
+  position: relative;
+  color: white;
+  background-color: black;
+  left: 60px;
+}
