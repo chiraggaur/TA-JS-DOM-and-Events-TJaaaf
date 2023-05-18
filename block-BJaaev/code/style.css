@@ -71,7 +71,7 @@ li{
     width: 120px;
     height: 40px;
 }
-.All{
+.all{
     width: 100px;
     height: 40px;
     background-color: black;
@@ -80,7 +80,7 @@ li{
     border-radius:5px ;
     font-size: 15px;
 }
-.Completed{
+.completed{
     width: 100px;
     height: 40px;
     background-color: black;
@@ -89,7 +89,7 @@ li{
     border-radius:5px ;
     font-size: 15px;
 }
-.Active{
+.active{
     width: 100px;
     height: 40px;
     background-color: black;
@@ -98,7 +98,7 @@ li{
     border-radius:5px ;
     font-size: 15px;
 }
-.Clear{
+.clear{
     width: 100px;
     height: 40px;
     background-color: black;

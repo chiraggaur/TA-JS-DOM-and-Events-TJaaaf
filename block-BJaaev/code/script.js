@@ -2,75 +2,17 @@
 function main (){
     let input = document.querySelector('.input_box');
     let rootElm = document.querySelector('.list');
+     //buttons
 
-    let all = document.querySelector('.All');
-    let clearCompleted = document.querySelector('.Clear');
-    let active = document.querySelector('.Active');
-    let  Completed= document.querySelector('.Completed');
+     let all = document.querySelector('.all');
+     let clear = document.querySelector('.clear');
+     let active = document.querySelector('.active');
+     let completed = document.querySelector('.completed');
 
-    let activeButton = "all";
+     let selectedButton = 'all';
+
+    let allItems = localStorage.getItem('todo') ? JSON.parse(localStorage.getItem('todo')) : [];
     
-    let allItems = [];
-    // JSON.parse(localStorage.getItem('todo'))
-    
-    all.addEventListener('click',selectedAll);
-     // selected All
-    function selectedAll(){
-        // allItems = allItems.isDone;
-        // all.classList.add('selected');
-        // selectedButton();
-        selectedButton(activeButton);
-        createUI();
-    }
-
-    // clear Completed
-     
-    clearCompleted.addEventListener('click',completedTodos);
-
-    function completedTodos(){
-        activeButton ='completed';
-        allItems = allItems.filter((todos) => {
-            return !todos.isDone;
-        });
-        console.log(allItems);
-        selectedButton(activeButton);
-        createUI();
-    }
-
-    //completed
-    
-    Completed.addEventListener('click',completedTodos);
-
-    function completedTodos(){
-        activeButton ='clear';
-        allItems = allItems.filter((todos) => {
-            return todos.isDone;
-        });
-        selectedButton(activeButton);
-        createUI();
-    }
-
-    // button selection 
-
-
-    function selectedButton(btn){
-     all.classList.remove('selected');
-     clearCompleted .classList.remove('selected');
-     active.classList.remove('selected');
-     Completed.classList.remove('selected');
-     if(btn === 'clear'){
-        clearCompleted.classList.add('selected');
-     }
-     if(btn === 'completed'){
-        Completed.classList.add('selected');
-     }
-     if(btn === 'active'){
-        active.classList.add('selected');
-     }
-     
-    }
-    // selectedButton(activeButton);
-    // selectedButton(activeButton);
 
     function handleEvent(event){
          let value = event.target.value;
@@ -83,7 +25,7 @@ function main (){
             // console.log(allItems);
            event.target.value = "";
 
-        //    localStorage.setItem('todo',JSON.stringify(allItems));
+           localStorage.setItem('todo',JSON.stringify(allItems));
 
            createUI();
               
@@ -98,7 +40,7 @@ function main (){
        function deleteList(event){
        let id = event.target.dataset.id;
        allItems.splice(id,1);
-    //    localStorage.setItem('todo',JSON.stringify(allItems));
+       localStorage.setItem('todo',JSON.stringify(allItems));
 
        createUI();
     } 
@@ -107,7 +49,7 @@ function main (){
      function handleCheck(event){
        let id = event.target.dataset.id;
       allItems[id].isDone = !allItems[id].isDone;
-    //   localStorage.setItem('todo',JSON.stringify(allItems));
+      localStorage.setItem('todo',JSON.stringify(allItems));
 
        createUI();
      }
@@ -135,7 +77,7 @@ function main (){
       
     
            span.addEventListener('click',deleteList);
-        //    localStorage.setItem('todo',JSON.stringify(allItems));
+         //   localStorage.setItem('todo',JSON.stringify(allItems));
     
            li.append(checkbox, h1, span);
            rootElm.append(li);
@@ -147,7 +89,60 @@ function main (){
     }
     
     createUI();
-    
+
+    //clearCompleted button
+    clear.addEventListener('click',() => {
+      allItems = allItems.filter((todos) => !todos.isDone);
+      selectedButton = 'all';
+      pickSelectedButton(selectedButton);
+      createUI();
+    });
+
+    //completed
+    completed.addEventListener('click',() => {
+      let completed = allItems.filter((todos) => todos.isDone);
+      createUI(completed);
+      selectedButton = 'completed';
+      pickSelectedButton(selectedButton);
+    });
+
+    //active
+     active.addEventListener('click',() => {
+      let notCompleted = allItems.filter((todos) => !todos.isDone);
+      selectedButton = 'active';
+      pickSelectedButton(selectedButton);
+      createUI(notCompleted);
+     })
+
+     //all
+     all.addEventListener('click',() => {
+      selectedButton = 'all';
+      pickSelectedButton(selectedButton);
+        createUI();
+     })
+
+    all.classList.add('selected');
+
+   function pickSelectedButton(btn){
+      all.classList.remove('selected');
+      active.classList.remove('selected');
+      completed.classList.remove('selected');
+
+      if(btn === 'all'){
+         all.classList.add('selected');
+      }
+      if(btn === 'active'){
+         active.classList.add('selected');
+      }
+      if(btn === 'completed'){
+         completed.classList.add('selected');
+      }
+      if(btn === 'clear'){
+         all.classList.add('selected');
+      }
+   }
+
+
     
     input.addEventListener('keyup', handleEvent);
  }
