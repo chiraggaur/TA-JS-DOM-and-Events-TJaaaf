@@ -1,0 +1,53 @@
+h1{
+    font-size: 50px;
+    display:  flex;
+    color: rgb(82, 5, 154);
+    justify-content:  center;
+    /* border: 2px solid black; */
+}
+
+.cover{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    left: 400px;
+    /* border: 2px solid black; */
+}
+.outerBox{
+     width: 200px;
+     height: 100px;
+
+     display: flex;
+     justify-content: space-evenly;
+     /* border: 2px solid black; */
+}
+.NameField{
+  width: 200px;
+  height: 20px;
+}
+.AgeField{
+    width: 200px;
+    height: 20px;
+}
+.submit{
+   width: 100px;
+   height: 40px;
+   display: inline-block;
+   position: relative;
+   left: 650px;
+   top: 20px;
+}
+.inputDetails{
+    width: 600px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* border:  2px solid black; */
+}
